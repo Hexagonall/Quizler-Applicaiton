@@ -29,12 +29,12 @@ class QuizInterface:
         self.canvas.grid(row=1, columnspan=2, column=0, pady=50)
 
 
-        self.false_button_img = PhotoImage(file="images/false.png")
+        self.false_button_img = PhotoImage(file="false.png")
         self.false_button = Button(image=self.false_button_img, highlightthickness=0, command= self.true_press)
         self.false_button.grid(column=1, row=2)
 
 
-        self.true_button_img = PhotoImage(file="images/true.png")
+        self.true_button_img = PhotoImage(file="true.png")
         self.true_button = Button(image=self.true_button_img, highlightthickness=0, command=self.false_press )
         self.true_button.grid(row=2, column=0)
         self.get_next_question()
